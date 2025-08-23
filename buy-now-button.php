@@ -139,7 +139,6 @@
 			<?php if ($logo_url): ?>
 				<img class="abb-bn-logo" src="<?php echo esc_url($logo_url); ?>" alt="<?php esc_attr_e('Brand logo', 'buy-now-button-customizable'); ?>" />
 			<?php endif; ?>
-			<h1 class="abb-bn-title"><?php esc_html_e('Button Style', 'buy-now-button-customizable'); ?></h1>
 			<span class="abb-version-badge">-v<?php echo esc_html(ABB_BN_VERSION); ?></span>
 		</div>
 
