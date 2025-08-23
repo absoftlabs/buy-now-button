@@ -2,8 +2,9 @@
     /**
      * Plugin Name: Woo Buy Now Button
      * Description: Adds a “Buy Now” button to product cards and single product pages for direct checkout with AJAX. Includes a settings page to customize colors (normal/hover/active), animation (hover or always), border radius, button text, and text alignment.
-     * Version: 1.5.5
+     * Version: 1.5.7
      * Author: absoftlab
+     * Author URI: https://absoftlab.com
      * License: MIT
      * Update URI: https://absoftlab.com/woo-buy-now-button
      * Text Domain: ab-buy-now-button-customizable
@@ -13,7 +14,7 @@
         exit;
     }
 
-    define('ABB_BN_VERSION', '1.5.5');
+    define('ABB_BN_VERSION', '1.5.7');
     define('ABB_BN_FILE', __FILE__);
     define('ABB_BN_URL', plugin_dir_url(__FILE__));
     define('ABB_BN_PATH', plugin_dir_path(__FILE__));
@@ -139,6 +140,7 @@
 			<?php if ($logo_url): ?>
 				<img class="abb-bn-logo" src="<?php echo esc_url($logo_url); ?>" alt="<?php esc_attr_e('Brand logo', 'buy-now-button-customizable'); ?>" />
 			<?php endif; ?>
+			
 			<span class="abb-version-badge">-v<?php echo esc_html(ABB_BN_VERSION); ?></span>
 		</div>
 
