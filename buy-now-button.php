@@ -12,7 +12,7 @@
 
 if (! defined('ABSPATH')) exit;
 
-define('ABB_BN_VERSION', '1.5.4');
+define('ABB_BN_VERSION', '1.6.0');
 define('ABB_BN_FILE', __FILE__);
 define('ABB_BN_URL', plugin_dir_url(__FILE__));
 define('ABB_BN_PATH', plugin_dir_path(__FILE__));
