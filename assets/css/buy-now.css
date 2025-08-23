@@ -135,3 +135,7 @@
 .bn-anim-ripple.is-active {
     animation: bnRipple 0.4s ease-out;
 }
+.buy-now-button-single{
+    margin-left: 0px !important;
+    margin-bottom: 10px !important;
+}
