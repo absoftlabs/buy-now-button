@@ -17,6 +17,7 @@ It lets customers add products instantly and go straight to **Checkout**, stream
 - [📥 Installation](#-installation)
 - [⚙️ Configuration](#️-configuration)
 - [🔧 Usage](#-usage)
+- [🛠️ Development Notes](#-development_notes)
 - [🧩 Troubleshooting](#-troubleshooting)
 - [🗒️ Changelog](#️-changelog)
 - [📄 License](#-license)
@@ -91,6 +92,14 @@ Open **WooCommerce → Buy Now Button** and configure:
 
 ---
 
+## 🛠️ Development Notes
+
+- The plugin keeps existing cart items by default. If you’d rather replace the cart contents on Buy Now, in `buy-now-button.php` (AJAX handler) uncomment:
+
+  ```php
+  // WC()->cart->empty_cart();
+- Buttons include animation classes (e.g., bn-anim-pulse). When Animation Trigger is set to Always, the class bn-anim-normal is also appended. Dynamic CSS is injected at runtime using wp_add_inline_style and marked with !important to defeat overly aggressive theme rules.
+
 ## 🧩 Troubleshooting
 
 **Settings don’t apply (colors/radius/text/align)**
@@ -120,14 +129,6 @@ Open **WooCommerce → Buy Now Button** and configure:
 - In `buy-now-button.php`, inside the AJAX handler, uncomment:
   ```php
   // WC()->cart->empty_cart();
-
-## 🧩 Troubleshooting
-
-- **Settings not applying:** Clear any page cache/minifier and CDN after saving.
-- **No redirect to Checkout:** Ensure WooCommerce is active; check the browser console for JS errors and disable conflicting “Buy Now” plugins.
-- **Variable products:** Ensure a valid variation is selected before clicking **Buy Now**.
-
----
 
 ## 🗒️ Changelog
 
