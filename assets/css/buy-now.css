@@ -1,5 +1,4 @@
-/* Minimal base styles are injected dynamically via PHP according to settings.
-   This file defines animations + a tiny loading style only. */
+/* Animations + small loading style. Colors & layout are injected inline via PHP. */
 
 .buy-now-button.is-loading,
 .buy-now-button-single.is-loading {
@@ -115,6 +114,7 @@
 
 .bn-anim-glow:hover {
     animation: bnGlow 1.2s ease-in-out infinite;
+    -webkit-animation: bnGlow 1.2s ease-in-out infinite;
 }
 
 .bn-anim-glow.bn-anim-normal {
