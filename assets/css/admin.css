@@ -324,7 +324,6 @@ h1 {
     border: 1px solid var(--border);
     background: linear-gradient(135deg, #4b2c85 0%, #8751ec 50%, #3e06a7 100%);
     color: white;
-    color: var(--text);
     text-decoration: none;
     font-weight: 600;
     letter-spacing: .2px;
